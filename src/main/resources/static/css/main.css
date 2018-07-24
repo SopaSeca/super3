@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form {
+    background-color: #efefef;
+    width: 400px;
+    height: 50px;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.favorite-link {
+    float: left;
+    width: 75%;
+}
+
+.favorite-delete {
+    float: left;
+    width: 25%;
+}
+
+.favorite:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.board {
+    max-width: 500px;
+    margin: auto;
+}
+
+.area {
+    color: gray;
+    border-radius: 0.5em;
+    padding: 0.3em;
+    margin: 0.5em;
+    box-shadow: .2em .2em .2em .1em rgba(66,66,66,.75);
+}
+
+.area-number {
+    text-align: center;
+}
+
+.pin {
+    font-size: 0.75em;
+    line-height: 2;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    color: gray;
+    cursor: progress;
+    border-radius: 1em;
+    box-shadow: inset .1em .1em .1em .05em rgba(66,66,66,.75);
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.dice {
+    line-height: 2;
+    height: 2em;
+    width: 2em;
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+    border-radius: 0.5em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.7em 1.7em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #3369ff;
+    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+    text-align: center;
+    position: relative;
+}
+
+.button:active {
+    box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+}
+
+@media all and (max-width: 30em) {
+     .button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}

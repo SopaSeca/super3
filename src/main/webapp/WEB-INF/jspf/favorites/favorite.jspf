@@ -1,0 +1,11 @@
+<div class="favorite">
+    <div class="favorite-link">
+        <a href="${requestScope.favorite.url}" target="_blank">${requestScope.favorite.name}</a>
+    </div>
+    <div class="favorite-delete">
+        <form action="/favorites/delete" method="post">
+            <input type="submit" value="X">
+            <input type="hidden" id="delete.url" name="id" value="${requestScope.favorite.id}">
+        </form>
+    </div>
+</div>

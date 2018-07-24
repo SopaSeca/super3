@@ -1,0 +1,19 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="area" value="${requestScope.area}"/>
+
+
+<div class="area" id="area-${area.number}">
+    <div class="area-number">${area.number}</div>
+    <div>
+        <table>
+            <c:forEach var="pin" items="${area.cells}">
+                <c:if test="${pin.number == 3||pin.number == 6||pin.number == 9}">
+                    <tr></c:if>
+                <td>
+                    <div id="pin-${area.number}-${pin.number}" class="pin"> ${pin.number} </div>
+                </td>
+                <c:if test="${pin.number == 5||pin.number == 8||pin.number == 11}">
+                    <tr></c:if>
+            </c:forEach></table>
+    </div>
+</div>
